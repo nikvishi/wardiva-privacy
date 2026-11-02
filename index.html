@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Wardiva: Phone Manager</title>
+<style>
+  body { font-family: Georgia, "Times New Roman", serif; max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; color: #1a1a1a; line-height: 1.55; }
+  h1 { font-size: 1.6rem; line-height: 1.25; }
+  h2 { font-size: 1.15rem; margin-top: 1.8rem; }
+  p, li { font-size: 1.02rem; }
+  .meta { color: #444; }
+</style>
+</head>
+<body>
+<h1>Privacy policy for Wardiva: Phone Manager</h1>
+<p class="meta">Developer: Asoltu Tech<br>
+App package on Google Play: com.asoltu.antivirus<br>
+Last updated: 2 November 2026<br>
+Contact: <a href="mailto:nikvishi@gmail.com">nikvishi@gmail.com</a></p>
+
+<p>This policy describes the Google Play version of Wardiva: Phone Manager. It matches how that version is built. Checks run on the phone. Wardiva does not run an account system, does not show ads, and does not include an analytics or crash-reporting service.</p>
+
+<h2>1. What this version does not do</h2>
+<p>The Google Play version does not declare the INTERNET permission, so the app itself cannot open a network connection or upload your files, messages, photos, clipboard, or app list. A library in the build declares ACCESS_NETWORK_STATE. Wardiva does not use that to send or receive your data.</p>
+<p>The Google Play version does not request permission to read SMS or phone state, and it does not include an accessibility service. A separate direct-download build can request SMS access. That build is not the one offered on Google Play. Where that build reads messages, it checks them on the phone and does not store or upload the message text.</p>
+<p>Wardiva is not a real-time protection product. A result that finds nothing unusual does not mean a link, file, or phone is safe.</p>
+
+<h2>2. Data that stays on the phone</h2>
+<p>The app reads information only for the feature you open, and keeps the result in the app’s own storage on the device. Android backup for the app is turned off. Uninstalling Wardiva removes that app storage.</p>
+<ul>
+  <li><strong>Link and message check.</strong> Text you paste is checked on the phone. The check parses the address and looks for warning patterns that are built into the app (for example a brand name on the wrong site, a shortened link, an “http” address, or a request for an OTP). It does not open the link, does not download the page, and does not ask a server what the site is. The result is a list of warning signs. It is never a statement that the link is safe.</li>
+  <li><strong>File check.</strong> When you run a scan or share a file into the app, Wardiva computes a SHA-256 fingerprint on the phone and compares it with a list shipped inside the app (about 6,150 entries in this version). A file that is not on the list is not treated as safe. A shared file is copied to the app cache for the check and that temporary copy is deleted when the check finishes. Fingerprints and file names are not uploaded.</li>
+  <li><strong>Installed apps.</strong> With the permission to see all apps, Wardiva reads package names, labels, versions, installers, and permissions. It uses this for the permission audit, the sideload and remote-access checks, and the optional “what changed” list. A snapshot and a short change log are stored in the app’s private files. They are not uploaded.</li>
+  <li><strong>Storage and the recycle bin.</strong> If you grant All files access, Wardiva can list files on shared storage to show large files, duplicates, and junk, including WhatsApp media folders. Files you choose to remove are moved to a recycle folder in the app’s storage for 7 days, then deleted. You can restore them or delete them sooner. Empty folders have nothing to restore, so those are removed directly. The original path of a binned file is stored in that recycle folder.</li>
+  <li><strong>Cache sizes.</strong> If you grant Usage access, Wardiva reads each app’s cache, app, and data size so it can show a list. It does not clear another app’s cache. It opens that app’s system Settings page instead.</li>
+  <li><strong>Security checkup.</strong> The checkup reads whether a screen lock is set, the security-patch date, whether USB debugging and developer options are on, which accessibility services are enabled, and which apps look sideloaded or are known remote-access apps. The report stays on the phone unless you choose to share it.</li>
+  <li><strong>Clipboard.</strong> If you save copied text, Wardiva keeps it in a private file on the phone (pinned items, plus up to 300 other items). You can delete items in the app. Android only lets the app read the current clipboard while Wardiva is on screen.</li>
+  <li><strong>After a scam.</strong> Notes you type, and an optional summary of what is already on the phone, are written into a PDF in the app cache. Wardiva does not send that PDF. If you tap share, Android asks you which app should receive it.</li>
+  <li><strong>Read-aloud.</strong> Spoken results use the phone’s own text-to-speech. The text is not sent to Asoltu.</li>
+  <li><strong>Settings.</strong> The app stores a few switches on the phone, such as the chosen appearance and whether the app-change check or clipboard saving is on.</li>
+</ul>
+<p>If you turn on the app-change check, the app looks at the installed-app list about every 15 minutes and can show a notification on the phone. That check does not send the list anywhere.</p>
+
+<h2>3. Permissions</h2>
+<p>The Google Play version requests:</p>
+<ul>
+  <li><strong>See all installed apps</strong> (QUERY_ALL_PACKAGES), for the app list, permission audit, and change check.</li>
+  <li><strong>All files access</strong> (MANAGE_EXTERNAL_STORAGE), only after you turn it on in system Settings, for the file scan and clutter tools.</li>
+  <li><strong>Usage access</strong> (PACKAGE_USAGE_STATS), only after you turn it on in system Settings, to read cache and storage sizes.</li>
+  <li><strong>Notifications</strong> (POST_NOTIFICATIONS), if you allow them, for app-change alerts.</li>
+</ul>
+<p>The build also includes library permissions used by the on-device scheduler: wake lock, network-state, receive-boot, and foreground-service. They are not used to upload your data.</p>
+
+<h2>4. Sharing that you start</h2>
+<p>Some screens offer a button that opens a page in your browser, such as cybercrime.gov.in or sancharsaathi.gov.in. That is your browser, not a connection made by Wardiva. Sharing a PDF or a checkup note uses Android’s share sheet. The app you pick then handles that file under its own policy.</p>
+
+<h2>5. What we collect</h2>
+<p>Asoltu Tech does not collect or share user data from this app. There is no Wardiva account, no ad network, and no server copy of your scans, files, messages, or app list. Because nothing is sent to us, there is no Asoltu profile to correct or delete. To remove what Wardiva stored on the phone, delete it inside the app (clipboard items and the recycle bin) or uninstall the app.</p>
+
+<h2>6. Children</h2>
+<p>Wardiva: Phone Manager is a phone utility for adults. It is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+<h2>7. Changes and contact</h2>
+<p>If this policy changes, the date at the top will change and the updated page will stay at this address. Questions: <a href="mailto:nikvishi@gmail.com">nikvishi@gmail.com</a>.</p>
+</body>
+</html>
